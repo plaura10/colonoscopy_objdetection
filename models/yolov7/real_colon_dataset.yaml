@@ -1,0 +1,5 @@
+train: path/to/the/sampled/train/folder
+val:  path/to/the/sampled/val/folder
+test: path/to/the/test/folder
+nc: 1
+names: ['polyp']
