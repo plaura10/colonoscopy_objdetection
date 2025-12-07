@@ -15,7 +15,7 @@ Clone the repository and follow these steps to seut up the necessary environment
    ```
 3. **Install dependencies** using the requirements file
    ``` python
-   pip install -r requirements.txt
+   pip install -r requirements.txt`
    ```
 
 # Dataset convertion and split  
