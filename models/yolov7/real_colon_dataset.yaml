@@ -1,5 +1,6 @@
-train: path/to/the/sampled/train/folder
-val:  path/to/the/sampled/val/folder
-test: path/to/the/test/folder
+train: path/to/the/final_yolo/train
+val:  path/to/the/final_yolo/val
+test: path/to/the/split/test
+
 nc: 1
 names: ['polyp']
