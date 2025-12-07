@@ -1,7 +1,6 @@
 """
 Use this script to convert the annotations of the REAL-Colon dataset from the VOC XML format to YOLO and COCO formats.
-The script also generates three dataset splits (training, validation, testing), performed at patient-level and cohort-level
-based on predefined study IDs.
+The script also generates three dataset splits (training, validation, testing), performed at patient-level and cohort-level.
 """
 
 import os
