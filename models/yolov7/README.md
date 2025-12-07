@@ -32,7 +32,7 @@ cd yolov7
 ### Step 2 - Apply the modified files 
 Replace the original files in YOLOv7 with the modified versions:
 ```bash
-cp ../models/yolov7/train_modified.py ./train.py
+cp ../models/yolov7/train.py ./train.py
 cp ../models/yolov7/real_colon_dataset.yaml ./data/
 ```
 
