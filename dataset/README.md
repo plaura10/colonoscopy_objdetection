@@ -24,3 +24,25 @@ Then run:
 ``` python
 python sampling.py   
 ```
+
+## 4. Final YOLO and COCO dataset
+### 4.1 Build YOLO Dataset
+After running the sampling script, run:
+```python
+python build_yolo_sampled_dataset.py
+```
+Before running, update the following line in the script: 
+```python
+BASE_DIR = Path("/path/to/your/dir")
+```
+BASE_DIR must contain the following folders:
+split/        # Output of export_yolo_coco_format.py  (full dataset)
+dataset/      # Output of sampling_real_colon.py      (filtered JSONs)
+
+The script will automatically create:
+final_yolo/
+   train/images/
+   train/labels/
+   val/images/
+   val/labels/
+
