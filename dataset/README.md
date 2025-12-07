@@ -1,15 +1,11 @@
 # Dataset Formatting 
 This repository provides scripts to format the REAL-Colon dataset to the format for the models YOLOv7, YOLOv11 (YOLO format) and RT-DETR (COCO format). 
 
----
-
 ## 1. Dataset Downloads
 First, download the REAL-Colon dataset at the link: https://plus.figshare.com/articles/media/REAL-colon_dataset/22202866. 
 After downloading, unzip all compressed files. 
 In total, you will have 120 folders, since the dataset contains 60 videos and each video has two linked folders. One containing the frames in JPG format, the other one containing the annotations in XML format. 
 The dataset also includes a lesion_info.csv file (information about the lesions) and video_info.csv file (information about the video).
-
----
  
 ## 2. Dataset Conversion and Split
 This module allows you to convert the REAL-Colon dataset into **YOLO** and **COCO** formats. You must set:
@@ -18,12 +14,8 @@ This module allows you to convert the REAL-Colon dataset into **YOLO** and **COC
    
 To replicate the full pipeline used in this repository, **the predefined train/validation/test split should be left unchanged**.
 
----
-
 ### Code Origins & Credits
 The dataset conversion script `export_yolo_coco_format.py` in this folder is adapted from the following repository: https://github.com/cosmoimd/yolov7.
-
----
 
 ## 3. Perform sampling of positive/negative frames
 Edit the input/output paths inside `sampling.py`:
@@ -36,8 +28,6 @@ Then run:
 python sampling.py   
 ```
 This script produces the sampled JSON files used for building the filtered YOLO and COCO datasets.
-
----
 
 ## 4. Final YOLO and COCO dataset
 ### 4.1 Build YOLO Dataset
