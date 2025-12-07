@@ -9,14 +9,14 @@ After you have this dataset, unzip all compressed files. At the end you have 120
 Clone the repository and follow these steps to seut up the necessary environmente:
 1. **Install Python**: ensure that python 3.8 or later is installed on your system.
 2. **Set up a virtual environment** (optional but reccomended):
-   '''python
+   ```python
    python -m venv dataset
    source dataset/bin/activate  # On Windows use `dataset\Scripts\activate`
-   '''
-3. **Install dependencies using the requirements file
-   '''python
+   ```
+3. **Install dependencies** using the requirements file
+   ``` python
    pip install -r requirements.txt
-   '''
+   ```
 
 # Dataset convertion and split  
 I performed this split 
