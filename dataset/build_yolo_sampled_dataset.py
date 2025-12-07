@@ -47,6 +47,20 @@ def load_json(path):
 def ensure_dir(path):
     os.makedirs(path, exist_ok=True)
 
+# STEP 0 — COPY train_ann.json / val_ann.json
+def copy_json(split):
+    print(f"\n Copying JSON for {split}...")
+
+    src = SAMPLED_FOLDER / split / f"{split}_ann.json"
+    dst = FINAL_YOLO_FOLDER / split / f"{split}_ann.json"
+
+    ensure_dir(dst.parent)
+
+    if src.exists():
+        shutil.copy(src, dst)
+        print(f"Copied {src.name} → {dst}")
+    else:
+        print(f"JSON not found: {src}")
 
 # STEP 1: COPY ONLY FILTERED IMAGES
 def copy_filtered_images(split):
@@ -169,6 +183,7 @@ def main():
     print("\nBuilding YOLO-ready dataset...")
 
     for split in ["train", "val"]:
+        copy_json(split)
         copy_filtered_images(split)
         copy_filtered_labels(split)
 
