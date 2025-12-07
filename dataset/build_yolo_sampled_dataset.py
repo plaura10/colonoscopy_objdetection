@@ -110,7 +110,7 @@ def copy_filtered_labels(split):
 
 
 # STEP 3: CONSISTENCY CHECK
-  def check_consistency(split):
+def check_consistency(split):
     print(f"\n Checking consistency for {split}...")
 
     json_path = SAMPLED_FOLDER / split / f"{split}_ann.json"
