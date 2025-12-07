@@ -19,6 +19,8 @@ Clone the repository and follow these steps to seut up the necessary environment
    ```
 
 # Dataset convertion and split  
-I performed this split 
+This allows you to convert the real colon dataset into **YOLO** and **COCO** format. You set the base_dataset_folder and the output_folder, to replicate the entire pipeline you leave the segremtation for training, validaiton, and testing sets unchanged.
+
+
 
 
