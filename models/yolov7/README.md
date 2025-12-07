@@ -1,4 +1,4 @@
-# YOLOv7 – Custom Files for REAL-Colon Training
+# YOLOv7 – Training Configuration for REAL-Colon
 
 This folder contains the **modified YOLOv7 script and configuration files** that were used to train YOLOv7 on the REAL-Colon dataset for the polyp detection experiments in this project.
 
