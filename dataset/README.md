@@ -76,7 +76,7 @@ dataset/      # Output of sampling_real_colon.py      (filtered JSONs)
 ```
 The script will automatically create:
 ```
-RTDETR
+RTDETR/
  train_ann.json
  val_ann.json
  test_ann.json
