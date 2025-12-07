@@ -30,10 +30,10 @@ from collections import Counter
 BASE_DIR = Path("/path/to/your/dir")
 
 # Folder containing the sampled JSON output
-SAMPLED_FOLDER = BASE_DIR / "mix_yv7"
+SAMPLED_FOLDER = BASE_DIR / "dataset"
 
 # Folder produced by export_yolo_coco_format.py (contains ALL images/labels)
-ORIGINAL_SPLIT_FOLDER = BASE_DIR / "final_split"
+ORIGINAL_SPLIT_FOLDER = BASE_DIR / "split"
 
 # Output folder for the final YOLO dataset
 FINAL_YOLO_FOLDER = BASE_DIR / "final_yolo"
