@@ -79,7 +79,7 @@ def process_all_splits():
 
     for split in splits:
         input_path = SOURCE_FOLDER / split / f"{split}_ann.json"
-        output_path = OUTPUT_FOLDER / f"{split}.json"
+        output_path = OUTPUT_FOLDER / f"{split}_ann.json"
 
         if not input_path.exists():
             print(f"Skipping {split}: JSON not found → {input_path}")
