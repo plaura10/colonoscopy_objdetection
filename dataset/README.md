@@ -29,7 +29,7 @@ python sampling.py
 ```
 This script produces the sampled JSON files used for building the filtered YOLO and COCO datasets.
 
-## 4. Final YOLO and COCO dataset
+## 4. Final YOLO and RT-DETR dataset
 ### 4.1 Build YOLO Dataset
 After running the sampling script, run:
 ```python
@@ -59,3 +59,26 @@ final_yolo/
 ```
       
 This produces the final YOLO-ready dataset containing only the sampled images and labels.
+
+### 4.2 Build 
+To generate RT-DETR-compatible JSONs, run:
+```
+python build_rtdetr_sampled_dataset.py
+```
+
+Before running, update the following line in the script: 
+```python
+BASE_DIR = Path("/path/to/your/dir")
+```
+BASE_DIR must contain the following folders:
+```
+dataset/      # Output of sampling_real_colon.py      (filtered JSONs)
+```
+The script will automatically create:
+```
+RTDETR
+ train_ann.json
+ val_ann.json
+ test_ann.json
+```
+These JSON files are directly compatible with RT-DETR training.
