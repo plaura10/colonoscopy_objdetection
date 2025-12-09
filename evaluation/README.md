@@ -9,7 +9,7 @@ Evaluation is performed on two levels:
 ### 1.1 COCO-based evaluation
 We use a modified COCO evaluation script to calculate detection metrics specifically for polyps:
 
-- **Script:** `evaluation/cocoeval.py`
+- **Script:** `cocoeval.py`
 - **Origin:** This file is based on the [COCO API](https://github.com/cocodataset/cocoapi) and adapted by [Cosmo Intelligent Medical Devices](https://github.com/cosmoimd/yolov7/tree/main).
 - **Purpose:** Compute standard COCO metrics (AP, AR) and area-based metrics for small, medium, and large polyps.
 
