@@ -46,4 +46,4 @@ This module includes scripts and notebooks for:
 - Generating experimental logs and plots  
 - Comparing YOLOv7, YOLOv11, and RT-DETR in realistic colonoscopy settings  
 
-Evaluation results are reproducible following the full pipeline outlined in this repository.
+Evaluation results are reproducible following the full pipeline outlined [here](https://github.com/plaura10/colonoscopy_objdetection/tree/main/evaluation)
