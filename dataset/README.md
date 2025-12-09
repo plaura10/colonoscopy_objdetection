@@ -1,4 +1,4 @@
-# Dataset Formatting 
+# Dataset Formatting 📁
 This repository provides scripts to format the REAL-Colon dataset to the format for the models YOLOv7, YOLOv11 (YOLO format) and RT-DETR (COCO format). 
 
 ## 1. Dataset Downloads
