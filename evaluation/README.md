@@ -20,7 +20,7 @@ python cocoeval.py --gt <coco_gt.json> --pred <predictions.json>
 
 ### 1.2 Frame-level evaluation
 To complement COCO metrics, we provide frame-level ROC/AUC analysis:
-- Script: ```bash roc_universal.py```
+- Script: ```roc_universal.py```
 - Usage:
 ```bash
 python roc_universal.py <coco_gt.json> <predictions.json> <output_dir>
