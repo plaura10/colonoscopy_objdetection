@@ -42,7 +42,7 @@ For detailed instructions, scripts, and configuration options for each model, se
 ## 3. Model Evaluation 📊
 This module includes scripts and notebooks for:
 
-- Evaluating model performance on the validation and test splits  
+- Evaluating model performance on the test set  
 - Generating experimental logs and plots  
 - Comparing YOLOv7, YOLOv11, and RT-DETR in realistic colonoscopy settings  
 
