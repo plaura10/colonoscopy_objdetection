@@ -7,10 +7,9 @@ This repository contains a complete and reproducible pipeline for benchmarking t
 The goal is to provide a standardized and comparable workflow for evaluating modern detectors in realistic colonoscopy settings.
 This repository includes: 
 1. Dataset preparation
-2. JSON cleaning and filtering notebooks
-3. Fine-tuning configuration for YOLOv7, YOLOv11 and RT-DETR
-4. Experimental logs, plots and model output
-5. Instruction to fully reproduce the experiments.
+2. Fine-tuning configuration for YOLOv7, YOLOv11 and RT-DETR
+3. Experimental logs, plots and model output
+4. Instruction to fully reproduce the experiments.
 
 ## 1. Dataset Preparation 
 This module provides all scripts needed to prepare the REAL-Colon dataset for training YOLOv7, YOLOv11, and RT-DETR. It includes:
