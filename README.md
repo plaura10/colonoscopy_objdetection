@@ -13,3 +13,9 @@ This repository includes:
 5. Instruction to fully reproduce the experiments.
 
 ## 1. Dataset Preparation 
+This module provides all scripts needed to prepare the REAL-Colon dataset for training YOLOv7, YOLOv11, and RT-DETR. It includes:
+- Download and organize dataset files (frames, annotations, CSV metadata)
+- Convert annotations to YOLO and COCO formats
+- Sample positive and negative frames to create a filtered dataset
+- Build final YOLO-ready and RT-DETR-ready datasets
+For detailed instructions, scripts, and configuration options, see the [Dataset Preparation folder](https://github.com/plaura10/colonoscopy_objdetection/tree/main/dataset) 
